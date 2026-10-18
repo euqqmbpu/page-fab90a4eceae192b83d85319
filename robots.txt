@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://p-6b62144e78.almdk.cn/sitemap.xml

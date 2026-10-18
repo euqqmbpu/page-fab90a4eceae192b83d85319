@@ -1,0 +1,360 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>蛙云 · 网络使用方案与客户端说明</title><meta name="description" content="蛙云是网络使用方案页面，按流量、设备数与支持方式整理三档方案，并说明客户端准备、订阅与启用步骤，以及常见问题。"><meta name="keywords" content="蛙云,蛙云套餐,蛙云客户端,网络方案,流量套餐,设备在线,使用说明"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-6b62144e78.almdk.cn/"><meta property="og:type" content="website"><meta property="og:title" content="蛙云 · 网络使用方案与客户端说明"><meta property="og:description" content="蛙云是网络使用方案页面，按流量、设备数与支持方式整理三档方案，并说明客户端准备、订阅与启用步骤，以及常见问题。"><meta property="og:url" content="https://p-6b62144e78.almdk.cn/"><meta property="og:site_name" content="蛙云"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-6b62144e78.almdk.cn/", "name": "蛙云 · 网络使用方案与客户端说明", "description": "蛙云是网络使用方案页面，按流量、设备数与支持方式整理三档方案，并说明客户端准备、订阅与启用步骤，以及常见问题。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="fab90a4eceae192b83d85319:ceb83e6adf487d515281fe5f8734b8d000e9a5290df5ad5c7a0cf7712f495927:b9f22eead15f03ddf1f3"></head><body id="top"><style>
+  :root{--slate-900:#1c2429;--slate-800:#27333a;--slate-700:#3a4a52;--slate-500:#6b7c85;--slate-300:#b9c4ca;--slate-200:#d7dfe3;--slate-100:#eef2f4;--paper:#f6f8f9;--cyan-600:#0f7d8c;--cyan-500:#1595a6;--cyan-300:#7fd0da;--cyan-100:#e2f4f6;--radius:20px;--shadow:0 18px 40px -24px rgba(28,36,41,.55)}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--slate-800);font-family:"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.7}
+  a{color:var(--cyan-600);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1,h2,h3{margin:0;line-height:1.25;letter-spacing:-.01em}
+  p{margin:0}
+  ul{margin:0;padding:0;list-style:none}
+
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px}
+
+  /* 首屏 */
+  .hero{background:var(--slate-900);color:var(--slate-100);padding:26px 0 0}
+  .hero-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .brandmark{font-size:19px;font-weight:700;letter-spacing:.14em;color:#fff}
+  .brandmark span{color:var(--cyan-300)}
+  .anchors{display:flex;flex-wrap:wrap;gap:8px}
+  .anchors a{display:inline-block;font-size:13px;padding:6px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.22);color:var(--slate-200);letter-spacing:.04em}
+  .anchors a:hover{color:#06232a;background:var(--cyan-300);border-color:var(--cyan-300);text-decoration:none}
+
+  .hero-grid{display:grid;grid-template-columns:1.05fr 1.5fr .95fr;gap:0;padding:44px 0 54px}
+  .hero-col{padding:0 26px}
+  .hero-col:first-child{padding-left:0}
+  .hero-col:last-child{padding-right:0}
+  .hero-col + .hero-col{border-left:1px solid rgba(255,255,255,.12)}
+
+  .kicker{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--cyan-300);margin-bottom:16px}
+  h1{font-size:clamp(30px,4.6vw,46px);font-weight:800;color:#fff}
+  h1 em{font-style:normal;color:var(--cyan-300)}
+  .hero-lede{margin-top:16px;font-size:15px;color:var(--slate-300);max-width:26em}
+  .hero-quote{font-size:clamp(18px,2.2vw,23px);line-height:1.6;font-weight:600;color:#fff}
+  .hero-quote-attr{margin-top:18px;font-size:13px;color:var(--slate-500);letter-spacing:.06em}
+  .hero-facts{display:grid;gap:14px}
+  .hero-fact{border-top:2px solid var(--cyan-500);padding-top:8px}
+  .hero-fact b{display:block;font-size:13px;letter-spacing:.06em;color:var(--cyan-300)}
+  .hero-fact span{font-size:14px;color:var(--slate-300)}
+  .hero-note{background:var(--slate-800);color:var(--slate-300);font-size:13px;padding:14px 0;letter-spacing:.02em}
+  .hero-note .wrap{display:flex;flex-wrap:wrap;gap:10px 22px}
+
+  /* 通用区块 */
+  section{padding:66px 0}
+  .sec-head{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:baseline;margin-bottom:34px}
+  .sec-num{font-size:13px;font-weight:700;letter-spacing:.16em;color:var(--cyan-600);padding-top:6px}
+  h2{font-size:clamp(22px,3vw,30px);font-weight:800;color:var(--slate-900)}
+  .sec-sub{margin-top:8px;font-size:15px;color:var(--slate-500);max-width:44em}
+
+  /* 方案：纵向列表逐行展开 */
+  .plans{display:grid;gap:20px}
+  .plan{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:26px 28px;display:grid;grid-template-columns:220px 1fr 200px;gap:26px;align-items:start;border-left:6px solid var(--cyan-500)}
+  .plan.featured{border-left-color:var(--slate-900);background:var(--cyan-100)}
+  .plan-name{font-size:19px;font-weight:800;color:var(--slate-900)}
+  .plan-tag{display:inline-block;margin-bottom:8px;font-size:11px;letter-spacing:.14em;padding:3px 9px;border-radius:6px;background:var(--slate-800);color:var(--cyan-300)}
+  .plan-desc{margin-top:8px;font-size:14px;color:var(--slate-500)}
+  .plan-features{display:grid;gap:7px;font-size:14.5px}
+  .plan-features li{display:grid;grid-template-columns:16px 1fr;gap:9px;color:var(--slate-700)}
+  .plan-features li::before{content:"";width:7px;height:7px;margin-top:9px;border-radius:2px;background:var(--cyan-500)}
+  .plan-price{text-align:right}
+  .plan-price strong{display:block;font-size:26px;font-weight:800;color:var(--slate-900);letter-spacing:-.02em}
+  .plan-price small{display:block;margin-top:4px;font-size:13px;color:var(--slate-500)}
+  .plan-price .annual{margin-top:10px;font-size:13px;color:var(--cyan-600)}
+
+  /* 使用说明 */
+  .usage{background:#fff}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .step{background:var(--slate-100);border-radius:var(--radius);padding:24px 24px 26px;box-shadow:var(--shadow)}
+  .step-idx{font-size:30px;font-weight:800;color:var(--cyan-500);line-height:1;letter-spacing:-.03em}
+  .step h3{margin-top:14px;font-size:17px;font-weight:800;color:var(--slate-900)}
+  .step p{margin-top:8px;font-size:14px;color:var(--slate-500)}
+  .usage-foot{margin-top:26px;font-size:14px;color:var(--slate-700);background:var(--cyan-100);border-radius:var(--radius);padding:18px 22px}
+
+  /* 客户端 */
+  .clients{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .client{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+  .client h3{font-size:16.5px;font-weight:800;color:var(--slate-900)}
+  .client p{margin-top:9px;font-size:14px;color:var(--slate-500)}
+  .client .meta{margin-top:14px;padding-top:12px;border-top:1px dashed var(--slate-200);font-size:13px;color:var(--slate-700)}
+
+  /* FAQ 编号列表 */
+  .faq{background:var(--slate-900);color:var(--slate-100)}
+  .faq h2{color:#fff}
+  .faq .sec-num{color:var(--cyan-300)}
+  .faq .sec-sub{color:var(--slate-300)}
+  .faq-list{display:grid;gap:2px}
+  .qa{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:22px 0;border-top:1px solid rgba(255,255,255,.14)}
+  .qa:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+  .qa-idx{font-size:22px;font-weight:800;color:var(--cyan-300);letter-spacing:-.02em}
+  .qa h3{font-size:16.5px;font-weight:700;color:#fff}
+  .qa p{margin-top:7px;font-size:14.5px;color:var(--slate-300)}
+
+  footer{background:var(--slate-800);color:var(--slate-500);font-size:13px;padding:30px 0}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between}
+  footer a{color:var(--slate-300)}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:26px;padding:34px 0 42px}
+    .hero-col{padding:0}
+    .hero-col + .hero-col{border-left:0;border-top:1px solid rgba(255,255,255,.12);padding-top:22px}
+    .plan{grid-template-columns:1fr;gap:16px}
+    .plan-price{text-align:left}
+    .steps,.clients{grid-template-columns:1fr}
+    .sec-head{grid-template-columns:1fr;gap:6px}
+  }
+</style><header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="brandmark">蛙云<span> / Wā Yún</span></div>
+      <nav class="anchors" aria-label="页面内锚点">
+        <a href="#plans">方案</a>
+        <a href="#usage">使用说明</a>
+        <a href="#clients">客户端</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-col">
+        <p class="kicker">网络使用方案</p>
+        <h1>蛙云，<br>把套餐讲清楚，<br><em>再谈使用。</em></h1>
+        <p class="hero-lede">三档方案，按流量、设备数与支持方式区分。先看参数，再决定要不要用。</p>
+      </div>
+
+      <div class="hero-col">
+        <p class="hero-quote">“选择方案时，先问自己两件事：一个月用多少流量，同时在线几台设备。答案清楚，套餐就清楚。”</p>
+        <p class="hero-quote-attr">—— 蛙云编辑说明</p>
+      </div>
+
+      <div class="hero-col">
+        <div class="hero-facts">
+          <div class="hero-fact">
+            <b>方案数量</b>
+            <span>三档：基础版 / 旗舰版 / 团队版</span>
+          </div>
+          <div class="hero-fact">
+            <b>计费周期</b>
+            <span>按月或按年，年付价格另列</span>
+          </div>
+          <div class="hero-fact">
+            <b>设备上限</b>
+            <span>3 台、5 台、20 台</span>
+          </div>
+          <div class="hero-fact">
+            <b>支持方式</b>
+            <span>普通工单，旗舰版起优先</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-note">
+    <div class="wrap">
+      <span>价格与权益以本页正文为准</span>
+      <span>客户端信息仅作准备说明</span>
+      <span>未确认的下载地址不在本页给出</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="plans">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-num">01 / 方案</p>
+        <div>
+          <h2>三档方案，逐行展开</h2>
+          <p class="sec-sub">每行一档，按流量、设备数与支持方式排列。年付价格写在月付价格下方，不另设隐藏条款。</p>
+        </div>
+      </div>
+
+      <div class="plans">
+        <article class="plan">
+          <div>
+            <h3 class="plan-name">基础版</h3>
+            <p class="plan-desc">适合单人或轻量使用，白天办公、晚上看片。</p>
+          </div>
+          <ul class="plan-features">
+            <li>每月 100GB 流量额度</li>
+            <li>支持 3 台设备同时在线</li>
+            <li>基础流媒体解锁</li>
+            <li>普通线路节点池</li>
+          </ul>
+          <div class="plan-price">
+            <strong>¥15/月</strong>
+            <small>按月计费</small>
+            <p class="annual">按年付 ¥150/年</p>
+          </div>
+        </article>
+
+        <article class="plan featured">
+          <div>
+            <span class="plan-tag">推荐</span>
+            <h3 class="plan-name">旗舰版</h3>
+            <p class="plan-desc">设备多一台，流量多两倍，适合家庭与小团队日常。</p>
+          </div>
+          <ul class="plan-features">
+            <li>每月 300GB 流量额度</li>
+            <li>支持 5 台设备同时在线</li>
+            <li>全节点原生流媒体解锁</li>
+            <li>IPLC 专线游戏加速优化</li>
+            <li>7×24 优先工单支持</li>
+          </ul>
+          <div class="plan-price">
+            <strong>¥35/月</strong>
+            <small>按月计费</small>
+            <p class="annual">按年付 ¥350/年</p>
+          </div>
+        </article>
+
+        <article class="plan">
+          <div>
+            <h3 class="plan-name">团队版</h3>
+            <p class="plan-desc">面向多人协作，流量与设备上限同步放宽。</p>
+          </div>
+          <ul class="plan-features">
+            <li>每月 1000GB 流量额度</li>
+            <li>支持 20 台设备同时在线</li>
+            <li>VIP 专属高带宽节点</li>
+            <li>支持企业定制路由</li>
+            <li>专属客户经理服务</li>
+          </ul>
+          <div class="plan-price">
+            <strong>¥85/月</strong>
+            <small>按月计费</small>
+            <p class="annual">按年付 ¥850/年</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="usage" class="usage">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-num">02 / 使用说明</p>
+        <div>
+          <h2>三步开始，按顺序来</h2>
+          <p class="sec-sub">先确认设备与需求，再选方案，最后在客户端里完成配置。每一步都可以单独核对。</p>
+        </div>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <p class="step-idx">1</p>
+          <h3>统计需求</h3>
+          <p>数一数同时在线的设备数量。查一下过去一个月的流量大致用掉多少。这两项决定你落在哪一档。</p>
+        </article>
+        <article class="step">
+          <p class="step-idx">2</p>
+          <h3>选定方案</h3>
+          <p>设备数与流量都在档位内，就选那一档。接近上限时，往上选一档更稳妥，不必卡着边界。</p>
+        </article>
+        <article class="step">
+          <p class="step-idx">3</p>
+          <h3>配置客户端</h3>
+          <p>在下方客户端区块确认平台与获取方式，安装后按说明填写配置项，再逐台设备启用。</p>
+        </article>
+      </div>
+
+      <p class="usage-foot">提醒：同一时间在线的设备数量以方案上限为准。设备轮换使用不受影响，但不要长期超过上限。</p>
+    </div>
+  </section>
+
+  <section id="clients">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-num">03 / 客户端</p>
+        <div>
+          <h2>客户端准备说明</h2>
+          <p class="sec-sub">按平台整理准备事项。具体获取方式以服务内提供的说明为准，本页不放置未经确认的下载链接。</p>
+        </div>
+      </div>
+
+      <div class="clients">
+        <article class="client">
+          <h3>桌面端</h3>
+          <p>在电脑上安装客户端后，填入配置信息即可启用。首次使用建议先在一台设备上验证。</p>
+          <p class="meta">准备：查看平台要求与安装包来源。下载地址：暂不提供。</p>
+        </article>
+        <article class="client">
+          <h3>移动端</h3>
+          <p>手机与平板通常需要手动导入配置。导入后检查在线设备数，避免超过方案上限。</p>
+          <p class="meta">准备：确认系统版本。下载地址：暂不提供。</p>
+        </article>
+        <article class="client">
+          <h3>路由器与其他设备</h3>
+          <p>如需在路由器上使用，请先确认固件支持情况。团队版可提出定制路由需求。</p>
+          <p class="meta">准备：核对固件与配置格式。下载地址：暂不提供。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-num">04 / 常见问题</p>
+        <div>
+          <h2>常见问题</h2>
+          <p class="sec-sub">六个问题，逐条回答。答案只围绕本页写明的参数。</p>
+        </div>
+      </div>
+
+      <div class="faq-list">
+        <div class="qa">
+          <p class="qa-idx">01</p>
+          <div>
+            <h3>三档方案的主要区别是什么？</h3>
+            <p>流量额度、同时在线设备数与支持方式。基础版每月 100GB、3 台设备；旗舰版每月 300GB、5 台设备；团队版每月 1000GB、20 台设备。</p>
+          </div>
+        </div>
+        <div class="qa">
+          <p class="qa-idx">02</p>
+          <div>
+            <h3>按月付和按年付怎么选？</h3>
+            <p>三档都提供年付价格：¥150、¥350、¥850。如果只是短期试用，先按月；确定长期使用，再考虑年付。</p>
+          </div>
+        </div>
+        <div class="qa">
+          <p class="qa-idx">03</p>
+          <div>
+            <h3>设备数量超过上限会怎样？</h3>
+            <p>同时在线设备数超过方案上限时，多出的设备无法正常使用。请控制在线数量，或换到设备数更高的档位。</p>
+          </div>
+        </div>
+        <div class="qa">
+          <p class="qa-idx">04</p>
+          <div>
+            <h3>客户端在哪里获取？</h3>
+            <p>本页不提供下载地址。请以你实际使用的服务内说明为准，并自行核对安装包来源，不使用来源不明的文件。</p>
+          </div>
+        </div>
+        <div class="qa">
+          <p class="qa-idx">05</p>
+          <div>
+            <h3>团队版能定制路由吗？</h3>
+            <p>团队版包含企业定制路由支持，并提供专属客户经理。具体能实现到什么程度，需要按实际环境沟通确认。</p>
+          </div>
+        </div>
+        <div class="qa">
+          <p class="qa-idx">06</p>
+          <div>
+            <h3>支持方式有什么不同？</h3>
+            <p>旗舰版与团队版提供更优先的工单响应，团队版另有客户经理。基础版按普通工单处理，响应顺序不同。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>蛙云 · 网络使用方案说明</span>
+    <span>本页价格与权益以正文为准</span>
+    <a href="#plans">返回方案</a>
+  </div>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
